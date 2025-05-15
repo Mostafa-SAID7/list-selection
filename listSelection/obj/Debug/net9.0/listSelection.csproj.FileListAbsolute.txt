@@ -1,0 +1,14 @@
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\bin\Debug\net9.0\listSelection.exe
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\bin\Debug\net9.0\listSelection.deps.json
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\bin\Debug\net9.0\listSelection.runtimeconfig.json
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\bin\Debug\net9.0\listSelection.dll
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\bin\Debug\net9.0\listSelection.pdb
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.AssemblyInfoInputs.cache
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.AssemblyInfo.cs
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.csproj.CoreCompileInputs.cache
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.dll
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\refint\listSelection.dll
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.pdb
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\listSelection.genruntimeconfig.cache
+C:\Users\Mostafa\Desktop\prjs\C# prjs\Selection-List\listSelection\obj\Debug\net9.0\ref\listSelection.dll
