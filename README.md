@@ -45,27 +45,27 @@ You can also run it from Visual Studio or Visual Studio Code by opening the fold
 ### 💡 Learning Goals
 This project helps you:
 
-. ✅ Practice list manipulation in C#
-. ✅ Implement manual sorting (bubble sort logic)
-. ✅ Handle user input using switch-case statements
-. ✅ Think algorithmically about calculating mean, minimum, and maximum without built-ins
+- ✅ Practice list manipulation in C#
+- ✅ Implement manual sorting (bubble sort logic)
+- ✅ Handle user input using switch-case statements
+- ✅ Think algorithmically about calculating mean, minimum, and maximum without built-ins
 
 ### 🧩 Potential Add-ons
 Consider adding the following to enhance the project:
 
-. 🔁 Swap two elements by index
-. ↩️ Undo the last action (add or remove)
-. 💾 Save/load list from a file
-. 🖼️ Create a GUI version using WinForms or WPF
-. 📤 Export the list to a .csv or .json file
+- 🔁 Swap two elements by index
+- ↩️ Undo the last action (add or remove)
+- 💾 Save/load list from a file
+- 🖼️ Create a GUI version using WinForms or WPF
+- 📤 Export the list to a .csv or .json file
 
 ### 🛠 Requirements
 
-. .NET 6.0 SDK or later
-. An IDE or editor such as:
-. Visual Studio
-. Visual Studio Code (with the C# extension)
-. Or a simple terminal for running with dotnet run
+- .NET 6.0 SDK or later
+- An IDE or editor such as:
+- Visual Studio
+- Visual Studio Code (with the C# extension)
+- Or a simple terminal for running with dotnet run
 
 ### 📝 How to Use This README
 To integrate this documentation into your GitHub project:
