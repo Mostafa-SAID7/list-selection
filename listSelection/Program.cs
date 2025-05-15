@@ -17,10 +17,18 @@ class Program
             Console.WriteLine("M - Display mean of the numbers");
             Console.WriteLine("S - Display the smallest number");
             Console.WriteLine("L - Display the largest number");
-            Console.WriteLine("F - Find a number");
-            Console.WriteLine("C - Clear the list");
+            
+            //Toggle sort order** (Ascending / Descending)        
             Console.WriteLine("T - Toggle sort order");
+            
+            //Display current sort order
             Console.WriteLine("D - Display sort order");
+
+            //Find a number** by value and display its index
+            Console.WriteLine("F - Find a number");
+
+            //Clear the list
+            Console.WriteLine("C - Clear the list");
             Console.WriteLine("Q - Quit");
 
             Console.Write("\nEnter your choice: ");
