@@ -1,6 +1,6 @@
 # 📋 List Selection Program in C#
 
-Welcome to the **List Selection** program — a simple and interactive console application written in C# that allows users to manage a list of integers through a menu-driven interface.
+a simple and interactive console application written in C# that allows users to manage a list of integers through a menu-driven interface.
 
 ---
 
