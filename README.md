@@ -1,16 +1,31 @@
 # 📋 List Selection Program in C#
 
-a simple and interactive console application written in C# that allows users to manage a list of integers through a menu-driven interface.
+This is a simple yet functional C# console application that lets users manage a list of numbers through a text-based menu. It supports adding, displaying, sorting, and analyzing numeric data.
 
 ---
 
 ## 🔍 Overview
 
-This project is a beginner-friendly C# application that demonstrates the use of:
+### 🔁 Control Flow Structures Used
 
-- Lists and loops
-- Switch-case statements
-- Manual implementations of common operations like sorting, searching, and averaging
+- while loop
+- switch statement
+- if / else statements
+- for loops
+
+### 🛠️ Methods and Functions Used
+
+- Console.WriteLine() / Console.Write()
+- Console.ReadLine()
+- Convert.ToInt32(string)
+- List<int> from System.Collections.Generic
+
+### Supports methods such as:
+
+- Add() – adds a number to the list.
+- Clear() – empties the list.
+- Count – gets the current number of items.
+- Contains() – checks for duplicates.
 
 > ⚠️ Built-in LINQ methods such as `.Sort()`, `.Min()`, `.Max()`, `.Avg()`, and `.Find()` are **not used** — all logic is implemented manually.
 
