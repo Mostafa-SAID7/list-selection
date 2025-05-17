@@ -17,17 +17,9 @@ class Program
             Console.WriteLine("M - Display mean of the numbers");
             Console.WriteLine("S - Display the smallest number");
             Console.WriteLine("L - Display the largest number");
-            
-            //Toggle sort order** (Ascending / Descending)        
             Console.WriteLine("T - Toggle sort order");
-            
-            //Display current sort order
             Console.WriteLine("D - Display sort order");
-
-            //Find a number** by value and display its index
             Console.WriteLine("F - Find a number");
-
-            //Clear the list
             Console.WriteLine("C - Clear the list");
             Console.WriteLine("Q - Quit");
 
@@ -38,58 +30,71 @@ class Program
             {
                 case "P":
                     if (numbers.Count == 0)
+                    {
                         Console.WriteLine("[] - the list is empty");
+                    }
                     else
                     {
                         Console.Write("[ ");
-                        foreach (int num in numbers)
-                            Console.Write(num + " ");
+                        for (int i = 0; i < numbers.Count; i++)
+                        {
+                            Console.Write(numbers[i] + " ");
+                        }
                         Console.WriteLine("]");
                     }
                     break;
 
                 case "A":
                     Console.Write("Enter a number to add: ");
-                    if (int.TryParse(Console.ReadLine(), out int newNumber))
-                    {
-                        if (numbers.Contains(newNumber))
-                        {
-                            Console.WriteLine("Duplicate entry - not added");
-                        }
-                        else
-                        {
-                            numbers.Add(newNumber);
-                            Console.WriteLine($"{newNumber} added");
+                    int newNumber = Convert.ToInt32(Console.ReadLine());
 
-                            // Sort the list after adding
-                            for (int i = 0; i < numbers.Count - 1; i++)
-                            {
-                                for (int j = i + 1; j < numbers.Count; j++)
-                                {
-                                    if ((sortAscending && numbers[i] > numbers[j]) || (!sortAscending && numbers[i] < numbers[j]))
-                                    {
-                                        int temp = numbers[i];
-                                        numbers[i] = numbers[j];
-                                        numbers[j] = temp;
-                                    }
-                                }
-                            }
+                    bool isDuplicate = false;
+                    for (int i = 0; i < numbers.Count; i++)
+                    {
+                        if (numbers[i] == newNumber)
+                        {
+                            isDuplicate = true;
+                            break;
                         }
+                    }
+
+                    if (isDuplicate)
+                    {
+                        Console.WriteLine("Duplicate entry - not added");
                     }
                     else
                     {
-                        Console.WriteLine("Invalid number. Try again.");
+                        numbers.Add(newNumber);
+                        Console.WriteLine($"{newNumber} added");
+
+                        // Sort the list
+                        for (int i = 0; i < numbers.Count - 1; i++)
+                        {
+                            for (int j = i + 1; j < numbers.Count; j++)
+                            {
+                                if ((sortAscending && numbers[i] > numbers[j]) || (!sortAscending && numbers[i] < numbers[j]))
+                                {
+                                    int temp = numbers[i];
+                                    numbers[i] = numbers[j];
+                                    numbers[j] = temp;
+                                }
+                            }
+                        }
                     }
                     break;
 
                 case "M":
                     if (numbers.Count == 0)
+                    {
                         Console.WriteLine("Unable to calculate the mean - no data");
+                    }
                     else
                     {
                         int total = 0;
-                        foreach (int num in numbers)
-                            total += num;
+                        for (int i = 0; i < numbers.Count; i++)
+                        {
+                            total += numbers[i];
+                        }
                         double mean = (double)total / numbers.Count;
                         Console.WriteLine($"The mean is {mean}");
                     }
@@ -97,49 +102,59 @@ class Program
 
                 case "S":
                     if (numbers.Count == 0)
+                    {
                         Console.WriteLine("Unable to determine the smallest number - list is empty");
+                    }
                     else
                     {
                         int smallest = numbers[0];
-                        foreach (int num in numbers)
-                            if (num < smallest)
-                                smallest = num;
+                        for (int i = 1; i < numbers.Count; i++)
+                        {
+                            if (numbers[i] < smallest)
+                            {
+                                smallest = numbers[i];
+                            }
+                        }
                         Console.WriteLine($"The smallest number is {smallest}");
                     }
                     break;
 
                 case "L":
                     if (numbers.Count == 0)
+                    {
                         Console.WriteLine("Unable to determine the largest number - list is empty");
+                    }
                     else
                     {
                         int largest = numbers[0];
-                        foreach (int num in numbers)
-                            if (num > largest)
-                                largest = num;
+                        for (int i = 1; i < numbers.Count; i++)
+                        {
+                            if (numbers[i] > largest)
+                            {
+                                largest = numbers[i];
+                            }
+                        }
                         Console.WriteLine($"The largest number is {largest}");
                     }
                     break;
 
                 case "F":
                     Console.Write("Enter a number to search for: ");
-                    if (int.TryParse(Console.ReadLine(), out int target))
+                    int target = Convert.ToInt32(Console.ReadLine());
+
+                    bool found = false;
+                    for (int i = 0; i < numbers.Count; i++)
                     {
-                        bool found = false;
-                        for (int i = 0; i < numbers.Count; i++)
+                        if (numbers[i] == target)
                         {
-                            if (numbers[i] == target)
-                            {
-                                Console.WriteLine($"{target} found at index {i}");
-                                found = true;
-                            }
+                            Console.WriteLine($"{target} found at index {i}");
+                            found = true;
                         }
-                        if (!found)
-                            Console.WriteLine($"{target} not found in the list");
                     }
-                    else
+
+                    if (!found)
                     {
-                        Console.WriteLine("Invalid input");
+                        Console.WriteLine($"{target} not found in the list");
                     }
                     break;
 
@@ -151,7 +166,6 @@ class Program
                 case "T":
                     sortAscending = !sortAscending;
 
-                    // Manual sort again with new direction
                     for (int i = 0; i < numbers.Count - 1; i++)
                     {
                         for (int j = i + 1; j < numbers.Count; j++)
